@@ -30,7 +30,7 @@ An offline-first Android document reader with text-to-speech narration, on-devic
 - Optional sound cues for page turns, bookmarks, OCR completion and sleep-timer end
 
 ### Audio export
-- Export the current page or a whole document as a WAV file, using the same content filters and pronunciation rules as live narration
+- Export the current page or a whole document as an MP3 file, using the same content filters and pronunciation rules as live narration
 - Runs as a cancellable background job with a progress notification, even if the reader screen is closed; share the result from the app
 
 ### Accessibility
@@ -49,7 +49,3 @@ Based on inspection of the app's source code:
 - OCR runs one page at a time, on demand; batch OCR of a whole scanned document in one pass is not currently provided
 - Content-filter changes apply to the next document opened, not the one currently open
 - Word highlighting is skipped on pages where pronunciation rules changed the spoken text's length, because engine offsets would land on the wrong words
-
----
-
-*This description is based on a static review of the app's source code; it has not been verified by running the app, and the reviewed source may differ in detail from the published APK.*
